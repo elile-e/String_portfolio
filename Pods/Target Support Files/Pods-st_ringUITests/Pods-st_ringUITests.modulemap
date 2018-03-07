@@ -1,0 +1,6 @@
+framework module Pods_st_ringUITests {
+  umbrella header "Pods-st_ringUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

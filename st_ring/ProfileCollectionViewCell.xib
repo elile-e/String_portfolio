@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProfileCollectionViewCell" id="gTV-IL-0wX" customClass="ProfileCollectionViewCell" customModule="st_ring" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNJ-gJ-E7u">
+                        <rect key="frame" x="6.5" y="0.0" width="288.5" height="385"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defualt" translatesAutoresizingMaskIntoConstraints="NO" id="0XQ-ot-IRb">
+                                <rect key="frame" x="-0.5" y="0.0" width="288.5" height="385"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0XQ-ot-IRb" secondAttribute="trailing" id="2mf-qr-xCj"/>
+                            <constraint firstAttribute="bottom" secondItem="0XQ-ot-IRb" secondAttribute="bottom" id="B6g-SO-xUj"/>
+                            <constraint firstAttribute="width" secondItem="BNJ-gJ-E7u" secondAttribute="height" multiplier="3:4" id="GfZ-hJ-QkR"/>
+                            <constraint firstItem="0XQ-ot-IRb" firstAttribute="top" secondItem="BNJ-gJ-E7u" secondAttribute="top" id="H4c-wz-zge"/>
+                            <constraint firstItem="0XQ-ot-IRb" firstAttribute="leading" secondItem="BNJ-gJ-E7u" secondAttribute="leading" id="Sc6-6F-ki0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="BNJ-gJ-E7u" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3Hs-JH-tTZ"/>
+                <constraint firstAttribute="bottom" secondItem="BNJ-gJ-E7u" secondAttribute="bottom" constant="15" id="o4C-i2-cMO"/>
+                <constraint firstAttribute="trailing" secondItem="BNJ-gJ-E7u" secondAttribute="trailing" constant="15" id="s0W-te-Jbs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="160" height="208"/>
+            <connections>
+                <outlet property="ProfileImg" destination="0XQ-ot-IRb" id="4fh-vc-Uya"/>
+                <outlet property="ShadowView" destination="BNJ-gJ-E7u" id="cLX-la-Dbs"/>
+            </connections>
+            <point key="canvasLocation" x="154" y="133"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="defualt" width="310" height="308"/>
+    </resources>
+</document>

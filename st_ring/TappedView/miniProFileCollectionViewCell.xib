@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareRegular.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="miniProFileCollectionViewCell" reuseIdentifier="miniProFileCollectionViewCell" id="gTV-IL-0wX" customClass="miniProFileCollectionViewCell" customModule="st_ring" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yF2-9S-9UE">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="yF2-9S-9UE" secondAttribute="height" multiplier="1:1" id="HJt-Nn-grb"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2OW-6N-eBS">
+                        <rect key="frame" x="0.0" y="100" width="100" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2OW-6N-eBS" secondAttribute="height" multiplier="10:1" id="cr1-bw-xDO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#서울 #23세" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0L-oX-aNd">
+                        <rect key="frame" x="5" y="115" width="75" height="10"/>
+                        <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCZ-Pw-GEB">
+                        <rect key="frame" x="7" y="101" width="55.5" height="9"/>
+                        <attributedString key="attributedText">
+                            <fragment content="White Member">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" size="8" name="NanumSquareB"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="ejh-G9-tJY">
+                        <rect key="frame" x="80.5" y="112" width="14.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ejh-G9-tJY" secondAttribute="height" multiplier="1:1" id="kSH-z4-h4K"/>
+                        </constraints>
+                    </imageView>
+                    <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Iv-Ud-fdK">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심사중" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqd-0B-lJ1">
+                                <rect key="frame" x="29.5" y="42" width="41" height="17"/>
+                                <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vqd-0B-lJ1" firstAttribute="centerX" secondItem="5Iv-Ud-fdK" secondAttribute="centerX" id="Imm-vx-zfj"/>
+                            <constraint firstItem="vqd-0B-lJ1" firstAttribute="centerY" secondItem="5Iv-Ud-fdK" secondAttribute="centerY" id="SqI-CZ-qg9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HCZ-Pw-GEB" firstAttribute="centerY" secondItem="2OW-6N-eBS" secondAttribute="centerY" id="1MB-no-tWv"/>
+                <constraint firstItem="M0L-oX-aNd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="3UW-Fj-geU"/>
+                <constraint firstItem="5Iv-Ud-fdK" firstAttribute="height" secondItem="yF2-9S-9UE" secondAttribute="height" id="3zF-lg-Nnh"/>
+                <constraint firstAttribute="trailing" secondItem="yF2-9S-9UE" secondAttribute="trailing" id="Fb3-Eu-t3j"/>
+                <constraint firstItem="yF2-9S-9UE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FeU-4D-rnj"/>
+                <constraint firstItem="ejh-G9-tJY" firstAttribute="width" secondItem="yF2-9S-9UE" secondAttribute="height" multiplier="1:7" id="MQ8-nx-Dfi"/>
+                <constraint firstAttribute="trailing" secondItem="ejh-G9-tJY" secondAttribute="trailing" constant="5" id="RmP-lQ-HSY"/>
+                <constraint firstItem="M0L-oX-aNd" firstAttribute="top" secondItem="yF2-9S-9UE" secondAttribute="bottom" constant="15" id="V7d-y1-RYJ"/>
+                <constraint firstAttribute="trailing" secondItem="5Iv-Ud-fdK" secondAttribute="trailing" id="Yk2-nQ-YIt"/>
+                <constraint firstItem="2OW-6N-eBS" firstAttribute="leading" secondItem="yF2-9S-9UE" secondAttribute="leading" id="eKD-Tx-kSq"/>
+                <constraint firstItem="2OW-6N-eBS" firstAttribute="top" secondItem="yF2-9S-9UE" secondAttribute="bottom" id="lax-2n-n11"/>
+                <constraint firstItem="ejh-G9-tJY" firstAttribute="centerY" secondItem="M0L-oX-aNd" secondAttribute="centerY" id="lhH-uS-iLC"/>
+                <constraint firstItem="2OW-6N-eBS" firstAttribute="trailing" secondItem="yF2-9S-9UE" secondAttribute="trailing" id="nWX-iu-qOz"/>
+                <constraint firstItem="5Iv-Ud-fdK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pyb-u2-g47"/>
+                <constraint firstItem="yF2-9S-9UE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ric-MB-XTz"/>
+                <constraint firstItem="5Iv-Ud-fdK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uog-2i-lz2"/>
+                <constraint firstAttribute="trailing" secondItem="M0L-oX-aNd" secondAttribute="trailing" constant="20" id="vgL-Z6-QK6"/>
+                <constraint firstItem="HCZ-Pw-GEB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="xdb-jK-p3v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="148" height="140"/>
+            <connections>
+                <outlet property="blurImg" destination="5Iv-Ud-fdK" id="QIm-Kw-Txe"/>
+                <outlet property="certificationImg" destination="2OW-6N-eBS" id="jBo-sT-AOG"/>
+                <outlet property="certificationLabel" destination="HCZ-Pw-GEB" id="l3g-mS-c1L"/>
+                <outlet property="lockImg" destination="ejh-G9-tJY" id="dJr-7N-OJQ"/>
+                <outlet property="profileImg" destination="yF2-9S-9UE" id="As1-SM-VYG"/>
+                <outlet property="profileLabel" destination="M0L-oX-aNd" id="v3P-zb-bPY"/>
+            </connections>
+            <point key="canvasLocation" x="87" y="86.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="lock" width="16" height="22"/>
+    </resources>
+</document>
